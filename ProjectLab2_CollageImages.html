@@ -1,17 +1,34 @@
-
-
 <html>
 <head>
-  <title>Image Collage</title>
+  <title>My Image Collage</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .collage {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+    }
+    .collage img {
+      width: 33.3%;
+      height: 33.3%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-  <h1>My Image Collage</h1>
-  <div style="display: flex; flex-wrap: wrap;">
-    <img src="Sumeet1.png" alt="Image 1" width="200">
-    <img src="Sumeet2.png" alt="Image 2" width="200">
-    <img src="Sumeet5.jpg" alt="Image 3" width="400">
-    <img src="Sumeet4.png" alt="Image 4" width="200">
-    <img src="Sumeet3.png" alt="Image 5" width="200">
+  <div class="collage">
+    <img src="img1.jpg" alt="Image 1">
+    <img src="Img2.jpg" alt="Image 2">
+    <img src="Img3.jpg" alt="Image 3">
+    <img src="Img4.jpg" alt="Image 4">
+    <img src="Img5.jpg" alt="Image 5">
+    <img src="Img6.jpg" alt="Image 6">
+    <img src="Img7.jpg" alt="Image 7">
+    <img src="Img8.jpg" alt="Image 8">
   </div>
 </body>
 </html>
