@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taj Mahal Details</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style> /* Internal CSS */
+        body {
+            background-color: #fffaf0;
+            padding: 20px;
+        }
+        .detail-page {
+            text-align: center;
+        }
+        .detail-page img {
+            width: 400px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        .detail-page p {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="detail-page">
+        <h1>Taj Mahal</h1>
+        <img src="images/tajmahal.jpg" alt="Taj Mahal">
+
+        <p>
+            The Taj Mahal is one of the Seven Wonders of the World. 
+            Built by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, 
+            this ivory-white marble mausoleum is a symbol of eternal love. 
+            Located in Agra, Uttar Pradesh, it was completed in 1653 and is known for its stunning architecture, 
+            detailed carvings, beautiful gardens, and the iconic white domes.
+        </p>
+
+        <p>
+            It was designated as a UNESCO World Heritage Site in 1983 and remains one of the most visited tourist attractions in India. 
+            The Taj Mahal’s beauty is most breathtaking at sunrise and sunset, where the changing light gives it different colors.
+        </p>
+
+        <br><br>
+        <a href="index.html" style="color: darkblue;">Back to Home</a>
+    </div>
+
+</body>
+</html>
