@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Framed Layout</title>
@@ -33,7 +31,7 @@
     iframe, img, video {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
     }
   </style>
 </head>
@@ -42,16 +40,16 @@
 <div class="container">
   <!-- Top row: 30% + 70% -->
   <div class="row">
-    <div class="box w30"><img src="img.jpg" alt="frame1"></div>
-    <div class="box w70"><img src="image2.jpg" alt="Frame 2"></div>
+    <div class="box w30"><img src="Img6.jpg" alt="frame1"></div>
+    <div class="box w70"><img src="Img8.jpg" alt="Frame 2"></div>
   </div>
 
   <!-- Bottom row: 30% + 30% + 30% + 70% -->
   <div class="row">
-    <div class="box w30"><video src="video1.mp4" autoplay loop muted></video></div>
-    <div class="box w30"><img src="image3.jpg" alt="Frame 3"></div>
-    <div class="box w30"><video src="video2.mp4" autoplay loop muted></video></div>
-    <div class="box w70"><img src="image4.jpg" alt="Frame 4"></div>
+    <div class="box w30"><video src="img1.jpg" autoplay loop muted></video></div>
+    <div class="box w30"><img src="img3.jpg" alt="Frame 3"></div>
+    <div class="box w30"><video src="img4.jpg" autoplay loop muted></video></div>
+    <div class="box w70"><img src="img5.jpg" alt="Frame 4"></div>
   </div>
 </div>
 
