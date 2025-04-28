@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>My Image Collage</title>
   <style>
     body {
@@ -13,22 +15,25 @@
       height: 100vh;
     }
     .collage img {
-      width: 33.3%;
-      height: 33.3%;
-      object-fit: cover;
+      width: calc(100% / 3);
+      height: calc(100% / 3);
+      object-fit: fill; /* Use 'contain' if you don't want zoom */
+      margin: 0;
+      padding: 0;
     }
   </style>
 </head>
 <body>
   <div class="collage">
     <img src="img1.jpg" alt="Image 1">
-    <img src="Img2.jpg" alt="Image 2">
-    <img src="Img3.jpg" alt="Image 3">
-    <img src="Img4.jpg" alt="Image 4">
-    <img src="Img5.jpg" alt="Image 5">
-    <img src="Img6.jpg" alt="Image 6">
-    <img src="Img7.jpg" alt="Image 7">
-    <img src="Img8.jpg" alt="Image 8">
+    <img src="img2.jpg" alt="Image 2">
+    <img src="img3.jpg" alt="Image 3">
+    <img src="img4.jpg" alt="Image 4">
+    <img src="img5.jpg" alt="Image 5">
+    <img src="img6.jpg" alt="Image 6">
+    <img src="img7.jpg" alt="Image 7">
+    <img src="img8.jpg" alt="Image 8">
+    <img src="img10.jpg" alt="Image 9">
   </div>
 </body>
 </html>
