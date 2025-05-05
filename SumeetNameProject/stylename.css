@@ -1,0 +1,61 @@
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  overflow: hidden; /* To prevent scrollbars */
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* Styling the name text */
+.name {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px #ff4500, 0 0 50px #ff4500, 0 0 75px #ff4500; /* Neon glow effect */
+  position: absolute;
+  left: -100%; /* Start off-screen */
+  animation: slideIn 6s ease-in-out infinite, pulse 2s ease-in-out infinite alternate; /* Multiple animations */
+  line-height: 1;  /* Ensure the line height is tight to avoid vertical shifting */
+}
+
+/* Slide-in and pulse animation */
+@keyframes slideIn {
+  0% {
+    left: -100%;
+    transform: rotate(0deg) scale(1); /* Initial off-screen position */
+  }
+  50% {
+    left: 50%;
+    transform: translateX(-50%) scale(1.3) rotate(360deg); /* Center with scaling */
+  }
+  100% {
+    left: 100%;
+    transform: rotate(0deg) scale(1); /* End off-screen */
+  }
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px #ff4500, 0 0 50px #ff4500, 0 0 75px #ff4500;
+  }
+  100% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 0.8), 0 0 40px #ff4500, 0 0 60px #ff4500, 0 0 80px #ff4500; /* Neon glow intensifies */
+  }
+}

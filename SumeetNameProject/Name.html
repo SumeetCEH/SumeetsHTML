@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit 3D Animation</title>
+  <link rel="stylesheet" href="stylename.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="name">Sumeet</h1>
+  </div>
+
+  <script>
+    const nameElement = document.querySelector('.name');
+    
+    let isJapanese = false;
+
+    function changeTextAndRestartAnimation() {
+      setInterval(() => {
+        // Change text every 3 seconds
+        if (isJapanese) {
+          nameElement.textContent = 'Sumeet';
+        } else {
+          nameElement.textContent = 'スミット';
+        }
+        isJapanese = !isJapanese; // Toggle between Japanese and English
+      }, 3000); // Change text every 3 seconds
+    }
+
+    // Start the name change and animation process
+    changeTextAndRestartAnimation();
+  </script>
+</body>
+</html>
