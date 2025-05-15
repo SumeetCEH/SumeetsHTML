@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Palindrome Checker</title>
+</head>
+<body>
+  <h2>Palindrome Checker</h2>
+  <script>
+    // Get input from user
+    const str = prompt("Enter a string to check if it's a palindrome:");
+
+    // Normalize the string (optional: remove non-alphanumeric & make lowercase)
+    const cleanStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+
+    // Reverse the string
+    const reversedStr = cleanStr.split('').reverse().join('');
+
+    // Check if palindrome
+    if (cleanStr === reversedStr) {
+      document.write(`"${str}" is a Palindrome.`);
+    } else {
+      document.write(`"${str}" is NOT a Palindrome.`);
+    }
+  </script>
+</body>
+</html>

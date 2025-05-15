@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weekday Name Finder</title>
+</head>
+<body>
+  <h2>Find Day Name from Number (1 to 7)</h2>
+  <script>
+    // Get input from user
+    const dayNum = parseInt(prompt("Enter a weekday number (1 to 7):"));
+
+    // Match number to day name
+    let dayName;
+
+    switch (dayNum) {
+      case 1:
+        dayName = "Sunday";
+        break;
+      case 2:
+        dayName = "Monday";
+        break;
+      case 3:
+        dayName = "Tuesday";
+        break;
+      case 4:
+        dayName = "Wednesday";
+        break;
+      case 5:
+        dayName = "Thursday";
+        break;
+      case 6:
+        dayName = "Friday";
+        break;
+      case 7:
+        dayName = "Saturday";
+        break;
+      default:
+        dayName = "Invalid input! Please enter a number from 1 to 7.";
+    }
+
+    // Display the result
+    document.write("Day: " + dayName);
+  </script>
+</body>
+</html>

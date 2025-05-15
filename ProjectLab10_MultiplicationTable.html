@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+</head>
+<body>
+  <h2>Multiplication Table Generator</h2>
+  <script>
+    // Take input from the user
+    const start = parseInt(prompt("Enter the starting number for the multiplication table:"));
+    const end = parseInt(prompt("Enter the ending number for the multiplication table:"));
+
+    // Validate input
+    if (isNaN(start) || isNaN(end) || start > end) {
+      alert("Invalid input! Please enter valid numbers where start <= end.");
+    } else {
+      for (let i = start; i <= end; i++) {
+        document.write("<h3>Multiplication Table for " + i + "</h3>");
+        for (let j = 1; j <= 10; j++) {
+          document.write(i + " × " + j + " = " + (i * j) + "<br>");
+        }
+        document.write("<hr>");
+      }
+    }
+  </script>
+</body>
+</html>
