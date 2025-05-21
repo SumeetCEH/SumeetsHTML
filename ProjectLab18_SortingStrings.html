@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sort 10-Character String</title>
+</head>
+<body>
+  <h2>Sort a 10-Character String</h2>
+
+  <label for="inputString">Enter a string (exactly 10 characters):</label><br>
+  <input type="text" id="inputString" maxlength="10" placeholder="e.g. javascript"><br><br>
+  <button onclick="sortString()">Sort Characters</button>
+
+  <p id="result"></p>
+
+  <script>
+    function sortString() {
+      const input = document.getElementById("inputString").value;
+
+      if (input.length !== 10) {
+        document.getElementById("result").innerText = "Please enter exactly 10 characters.";
+        return;
+      }
+
+      const sorted = input.split('').sort().join('');
+      document.getElementById("result").innerText = "Sorted string: " + sorted;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci Calculator</title>
+</head>
+<body>
+  <h2>Fibonacci Number Calculator (Recursive)</h2>
+
+  <label for="number">Enter a number (n): </label>
+  <input type="number" id="number" min="0">
+  <button onclick="calculateFibonacci()">Calculate</button>
+
+  <p id="result"></p>
+
+  <script>
+    // Recursive function to calculate Fibonacci number
+    function fibonacci(n) {
+      if (n < 0) {
+        return "Invalid input";
+      }
+      if (n === 0) return 0;
+      if (n === 1) return 1;
+      return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    function calculateFibonacci() {
+      const input = document.getElementById("number").value;
+      const n = parseInt(input);
+      
+      if (isNaN(n) || n < 0) {
+        document.getElementById("result").innerText = "Please enter a valid non-negative number.";
+        return;
+      }
+
+      const result = fibonacci(n);
+      document.getElementById("result").innerText = `Fibonacci number at position ${n} is: ${result}`;
+    }
+  </script>
+</body>
+</html>

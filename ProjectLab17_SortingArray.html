@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sort 10 Numbers</title>
+</head>
+<body>
+  <h2>Sort an Array of 10 Numbers</h2>
+
+  <p>Enter 10 numbers separated by commas:</p>
+  <input type="text" id="numberInput" placeholder="e.g. 5,3,8,1,6,4,9,2,7,0">
+  <button onclick="sortArray()">Sort</button>
+
+  <p id="result"></p>
+
+  <script>
+    function sortArray() {
+      const input = document.getElementById("numberInput").value;
+      const numberArray = input.split(',').map(num => parseInt(num.trim()));
+
+      if (numberArray.length !== 10 || numberArray.some(isNaN)) {
+        document.getElementById("result").innerText = "Please enter exactly 10 valid numbers.";
+        return;
+      }
+
+      numberArray.sort((a, b) => a - b);
+
+      document.getElementById("result").innerText = "Sorted Array: " + numberArray.join(', ');
+    }
+  </script>
+</body>
+</html>
